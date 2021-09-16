@@ -1,0 +1,197 @@
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body::before {
+    content: '';
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    z-index: -1;
+    background: url(../img/22_181.jpg) center / cover no-repeat;
+    filter: blur(5px);
+   }
+a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+.tac {
+    text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.header__logo {
+    background: url(../img/logo.png) no-repeat left;
+    padding: 35px 90px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.header__link {
+    padding: 10px 20px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.tittle {
+    color: white;
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 150%;
+    text-shadow: 1px 0 1px #000, 
+    0 1px 1px #000, 
+    -1px 0 1px #000, 
+    0 -1px 1px #000;
+}
+.main__text{
+    max-width: 600px;
+    font-size: 18px;
+    color: black;
+}
+.df {
+    display: flex;
+}
+.m0 {
+    margin: 0;
+}
+.jcsb {
+    justify-content: space-between;
+}
+.fww {
+    flex-wrap: wrap;
+}
+.main__img {
+    margin-top: 100px;
+    max-width: 700px;
+}
+.jcc {
+    justify-content: center;
+}
+.main__card {
+    max-width: 330px;
+}
+.studio__card {
+    max-width: 680px;
+    font-size: 18px;
+    text-align: center;
+    background: white;
+    color: black;
+    border-radius: 15px;
+    margin: 50px 13px;
+    border: 2px solid black;
+}
+.studio__img {
+    width: 680px;
+}
+.studio__tittle {
+    margin-top: 10px;
+}
+.price__tittle {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.price {
+    margin-bottom: 10px;
+}
+
+.uslugi__df{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.uslugi__text {
+    max-width: 550px;
+    margin-left: 100px;
+    color: black;
+    font-size: 24px;
+    margin-right: 20px;
+}
+.mt100 {
+    margin-top: 100px;
+}
+.ml200 {
+    margin-left: 200px;
+}
+.img__width {
+    max-width: 750px;
+}
+.contacts__card {
+    display: flex;
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+    flex-basis: 33%;
+}
+.t__team {
+    color: white;
+    text-align: center;
+}
+.t__text {
+    color: black;
+    font-size: 36px;
+}
+.contact__name {
+    font-size: 44px;
+}
+.card__texts {
+    margin: 0px 30px;
+}
+.info {
+    color: black;
+    font-weight: 500;
+    font-size: 28px;
+}
+.strong {
+    font-size: 36px;
+}
+@media screen and (max-width: 1366px) {
+    .right {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .header__link {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .container {
+       width: 95%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+    .main__text {
+        display: flex
+    }
+    .studio__card {
+        max-width: 350px;
+    }
+    .studio__img {
+        max-width: 350px;
+    }
+    .img__width {
+        max-width: 350px;
+    }
+}
